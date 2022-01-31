@@ -1,0 +1,9 @@
+class Solution(object):
+    def finalValueAfterOperations(self, operations):
+        ans=0
+        for i in operations:
+            if i[0]=="+" or i[2]=="+":
+                ans+=1
+            else:
+                ans-=1
+        return ans
